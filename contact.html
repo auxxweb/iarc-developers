@@ -59,45 +59,6 @@
         </div>
         <!-- Spinner End -->
 
-        <!-- Topbar Start -->
-        <div class="container-fluid bg-dark p-0 wow fadeIn" data-wow-delay="0.1s">
-            <div class="row gx-0 d-none d-lg-flex">
-                <div class="col-lg-7 px-5 text-start">
-                    <div class="h-100 d-inline-flex align-items-center py-3 me-3">
-                        <a class="text-body px-2" href="tel:+0123456789"
-                            ><i class="fa fa-phone-alt text-primary me-2"></i> +91 91420 20002, +91
-                            98465 10514</a
-                        >
-                        <a class="text-body px-2" href="mailto:iarchdevelopers@gmail.com"
-                            ><i class="fa fa-envelope-open text-primary me-2"></i
-                            >iarchdevelopers@gmail.com</a
-                        >
-                    </div>
-                </div>
-                <div class="col-lg-5 px-5 text-end">
-                    <div class="h-100 d-inline-flex align-items-center py-3 me-2">
-                        <a class="text-body px-2" href="">Terms</a>
-                        <a class="text-body px-2" href="">Privacy</a>
-                    </div>
-                    <div class="h-100 d-inline-flex align-items-center">
-                        <a class="btn btn-sm-square btn-outline-body me-1" href=""
-                            ><i class="fab fa-facebook-f"></i
-                        ></a>
-                        <a class="btn btn-sm-square btn-outline-body me-1" href=""
-                            ><i class="fab fa-twitter"></i
-                        ></a>
-                        <a class="btn btn-sm-square btn-outline-body me-1" href=""
-                            ><i class="fab fa-linkedin-in"></i
-                        ></a>
-                        <a class="btn btn-sm-square btn-outline-body me-0" href=""
-                            ><i class="fab fa-instagram"></i
-                        ></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Topbar End -->
-
         <!-- Navbar Start -->
         <nav
             class="navbar navbar-expand-lg bg-white navbar-light sticky-top py-lg-0 px-lg-5 wow fadeIn"
@@ -105,7 +66,7 @@
         >
             <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
                 <h1 class="text-primary m-0">
-                    <img class="me-3" src="img/icons/icon-1.png" alt="Icon" />I Arch
+                    <img class="me-3" width="280" height="40" src="img/logo/logo.png" alt="Icon" />
                 </h1>
             </a>
             <button
@@ -117,26 +78,16 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
-                <div class="navbar-nav ms-auto p-4 p-lg-0">
-                    <a href="index.html" class="nav-item nav-link">Home</a>
-                    <a href="about.html" class="nav-item nav-link">About</a>
-                    <a href="service.html" class="nav-item nav-link">Services</a>
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
-                            >Pages</a
-                        >
-                        <div class="dropdown-menu border-0 m-0">
-                            <a href="feature.html" class="dropdown-item">Our Features</a>
-                            <a href="project.html" class="dropdown-item">Our Projects</a>
-                            <a href="team.html" class="dropdown-item">Team Members</a>
-                            <a href="appointment.html" class="dropdown-item">Appointment</a>
-                            <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                            <a href="404.html" class="dropdown-item">404 Page</a>
-                        </div>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto p-4 p-lg-0">
+                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="service.html" class="nav-item nav-link">Services</a>
+                        <a href="gallery.html" class="nav-item nav-link">Gallery</a>
+                        <a href="contact.html" class="nav-item nav-link active">Contact</a>
                     </div>
-                    <a href="contact.html" class="nav-item nav-link active">Contact</a>
                 </div>
-                <a href="" class="btn btn-primary py-2 px-4 d-none d-lg-block">Appointment</a>
+                <!-- <a href="" class="btn btn-primary py-2 px-4 d-none d-lg-block">Appointment</a> -->
             </div>
         </nav>
         <!-- Navbar End -->
@@ -229,7 +180,7 @@
                             innovative solutions tailored to your needs. Contact us to bring your
                             next project to life.
                         </p>
-                        <form>
+                        <form id="contact-form">
                             <div class="row g-3">
                                 <div class="col-md-6">
                                     <div class="form-floating">
@@ -312,15 +263,19 @@
                     <div class="col-lg-3 col-md-6">
                         <h3 class="text-light mb-4">Address</h3>
                         <p class="mb-2">
-                            <i class="fa fa-map-marker-alt text-primary me-3"></i>123 Street, New
-                            York, USA
+                            <i class="fa fa-map-marker-alt text-primary me-2"></i>2nd Floor,
+                            Mangalath Tower, Padivattom Road, Vennala, Ernakulam - 682028, Kerala
                         </p>
                         <p class="mb-2">
-                            <i class="fa fa-phone-alt text-primary me-3"></i> +91 91420 20002, +91
+                            <i class="fa fa-map-marker-alt text-primary me-2"></i>2nd Floor, Palm
+                            Fibre Building, Opp. KSRTC, Cherthala
+                        </p>
+                        <p class="mb-2">
+                            <i class="fa fa-phone-alt text-primary me-2"></i> +91 91420 20002, +91
                             98465 105140
                         </p>
                         <p class="mb-2">
-                            <i class="fa fa-envelope text-primary me-3"></i
+                            <i class="fa fa-envelope text-primary me-2"></i
                             >iarchdevelopers@gmail.com
                         </p>
                         <div class="d-flex pt-2">
@@ -353,23 +308,6 @@
                         <a class="btn btn-link" href="">Our Services</a>
                         <a class="btn btn-link" href="">Terms & Condition</a>
                         <a class="btn btn-link" href="">Support</a>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <h3 class="text-light mb-4">Newsletter</h3>
-                        <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
-                        <div class="position-relative mx-auto" style="max-width: 400px">
-                            <input
-                                class="form-control bg-transparent w-100 py-3 ps-4 pe-5"
-                                type="text"
-                                placeholder="Your email"
-                            />
-                            <button
-                                type="button"
-                                class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2"
-                            >
-                                SignUp
-                            </button>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -409,4 +347,110 @@
         <!-- Template Javascript -->
         <script src="js/main.js"></script>
     </body>
+
+    <script>
+        $(document).ready(function () {
+            $('#contact-form').on('submit', function (e) {
+                e.preventDefault(); // Prevent the form from submitting the traditional way
+
+                const fields = ['name', 'email', 'subject', 'message'];
+
+                let isValid = true; // Flag to track validation status
+
+                // Loop through fields to validate them
+                fields.forEach((fieldId) => {
+                    const field = $(`#${fieldId}`);
+                    const value = field.val().trim();
+
+                    if (!value) {
+                        isValid = false;
+                        field.css('border-color', 'red'); // Highlight invalid fields
+                        field.next('.error-message').text('This field is required').show();
+                    } else if (fieldId === 'email' && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)) {
+                        isValid = false;
+                        field.css('border-color', 'red'); // Highlight invalid fields
+                        field.next('.error-message').text('Enter a valid email address').show();
+                    } else {
+                        field.css('border-color', 'green'); // Mark valid fields
+                        field.next('.error-message').hide();
+                    }
+                });
+
+                // If validation fails, stop submission
+                if (!isValid) return;
+
+                // Define the submit button and loading spinner
+                const rsubmitButton = document.getElementById('rs-btn');
+                const rloadingButton = document.getElementById('rloading');
+                const toast = document.getElementById('toast');
+
+                // Show the loading spinner and hide the submit button
+                if (rsubmitButton) rsubmitButton.style.display = 'none';
+                if (rloadingButton) rloadingButton.style.display = 'block';
+                const formData = {
+                    name: $('#name').val(),
+                    email: $('#email').val(),
+                    subject: $('#subject').val(),
+                    message: $('#message').val(),
+                };
+                // Perform the AJAX request
+                $.ajax({
+                    url: 'https://script.google.com/macros/s/AKfycbxkCT6cnJQrA37uFylMrcGEGlvuX-07EHMQPF0YY6UAknmlZtnYr1d3XBuDRSLVM6Dddw/exec',
+                    data: formData,
+                    method: 'post',
+                    success: function (response) {
+                        $('#contact-form')[0].reset(); // Reset form fields
+                        if (toast) {
+                            toast.classList.add('show');
+                            toast.textContent =
+                                'Referral submitted successfully, thank you for your referral!';
+                            setTimeout(function () {
+                                toast.classList.remove('show');
+                            }, 3000);
+                        }
+
+                        // Show the submit button again and hide the loading spinner
+                        if (rsubmitButton) rsubmitButton.style.display = 'block';
+                        if (rloadingButton) rloadingButton.style.display = 'none';
+
+                        // Reset field styles
+                        fields.forEach((fieldId) => {
+                            $(`#${fieldId}`).css('border-color', '');
+                        });
+                    },
+                    error: function (err) {
+                        // Hide loading spinner and show error message
+                        if (rloadingButton) rloadingButton.style.display = 'none';
+                        if (toast) {
+                            toast.classList.add('show');
+                            toast.style.backgroundColor = '#dc3545'; // Red for error
+                            toast.textContent = 'Something went wrong. Please try again.';
+                            setTimeout(function () {
+                                toast.classList.remove('show');
+                            }, 3000);
+                        }
+
+                        // Show the submit button again
+                        if (rsubmitButton) rsubmitButton.style.display = 'block';
+                    },
+                });
+            });
+                console.log("🚀 ~ formData:", formData)
+
+            // Attach live validation on input focus and typing
+            const fields = ['name', 'email', 'subject', 'message'];
+            fields.forEach((fieldId) => {
+                $(`#${fieldId}`).on('input focus', function () {
+                    const value = $(this).val().trim();
+                    if (value) {
+                        $(this).css('border-color', 'green');
+                        $(this).next('.error-message').hide();
+                    } else {
+                        $(this).css('border-color', 'red');
+                        $(this).next('.error-message').text('This field is required').show();
+                    }
+                });
+            });
+        });
+    </script>
 </html>
