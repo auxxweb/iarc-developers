@@ -1,8 +1,40 @@
 /********** Template CSS **********/
 :root {
+    /* Font settings */
+    --font-default: 'Mulish', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', 
+        Arial, 'Noto Sans', 'Liberation Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+    --font-primary: 'Philosopher', serif;
+    --font-secondary: 'Mulish', sans-serif;
+
+    /* Color settings */
     --primary: #b78d65;
     --light: #f8f8f8;
     --dark: #252525;
+
+    /* Smooth scroll behavior */
+    scroll-behavior: smooth;
+}
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+    font-family: var(--font-default);
+    color: var(--dark);
+    background-color: var(--light);
+    overflow-x: hidden;
+}
+
+a {
+    color: var(--primary);
+    text-decoration: none;
+    font-family: var(--font-primary);
+}
+
+a:hover {
+    color: #ffc732;
+    text-decoration: none;
 }
 
 h1,
@@ -10,6 +42,7 @@ h2,
 .h1,
 .h2,
 .fw-bold {
+    font-family: var(--font-primary);
     font-weight: 600 !important;
 }
 
@@ -18,6 +51,7 @@ h4,
 .h3,
 .h4,
 .fw-medium {
+    font-family: var(--font-primary);
     font-weight: 500 !important;
 }
 
@@ -26,8 +60,10 @@ h6,
 .h5,
 .h6,
 .fw-normal {
+    font-family: var(--font-secondary);
     font-weight: 400 !important;
 }
+
 
 .back-to-top {
     position: fixed;
