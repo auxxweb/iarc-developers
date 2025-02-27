@@ -42,6 +42,11 @@
     </head>
 
     <body style="position: relative">
+        <!-- Toast container (hidden by default) -->
+<div id="toast" class="toast">
+    <span id="toast-message"></span> 
+    <span id="toast-close" class="toast-close">&#10006;</span> <!-- Close button -->
+  </div>
         <!-- Spinner Start -->
         <div
             id="spinner"
@@ -834,8 +839,11 @@
                                     </div>
                                 </div>
                                 <div class="col-12">
-                                    <button class="btn btn-primary w-100 py-3" type="submit">
+                                    <button id="rs-btn" class="btn btn-primary w-100 py-3" type="submit">
                                         Send Message
+                                    </button>
+                                    <button style="display: none;" id="rloading" class="btn btn-primary w-100 py-3" type="submit">
+                                        Submitting...
                                     </button>
                                 </div>
                             </div>
@@ -938,7 +946,7 @@
                             &copy; <a href="#">I Arch Developers</a>, All Right Reserved.
                         </div>
                         <div class="col-md-6 text-center text-md-end">
-                            Designed By <a href="https://auxxweb.com/">Auxxweb Solutions</a>
+                            Designed By <a href="https://auxxweb.com/">Auxxweb  Solutions</a>
                         </div>
                     </div>
                 </div>
@@ -1033,7 +1041,7 @@
                     };
                     // Perform the AJAX request
                     $.ajax({
-                        url: 'https://script.google.com/macros/s/AKfycbxkCT6cnJQrA37uFylMrcGEGlvuX-07EHMQPF0YY6UAknmlZtnYr1d3XBuDRSLVM6Dddw/exec',
+                        url: 'https://script.google.com/macros/s/AKfycbxiSa8FeuIh1IoK4HNUJDCrW8vmuoHpnjBHqLPoxKDbnuE70LUGVN2JNULxNTRcEXhlOg/exec',
                         data: formData,
                         method: 'post',
                         success: function (response) {
@@ -1041,7 +1049,7 @@
                             if (toast) {
                                 toast.classList.add('show');
                                 toast.textContent =
-                                    'Referral submitted successfully, thank you for your referral!';
+                                    'Form submitted successfully!';
                                 setTimeout(function () {
                                     toast.classList.remove('show');
                                 }, 3000);
@@ -1092,4 +1100,5 @@
             });
         </script>
     </body>
+
 </html>
