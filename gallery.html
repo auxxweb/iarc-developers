@@ -108,9 +108,63 @@
             </div>
         </div>
         <!-- Page Header End -->
+<div class="featured-video">
+    <video
+        id="mainVideo"
+        autoplay
+        muted
+        loop
+        playsinline
+        controls
+        preload="auto"
+    >
+        <source
+            src="img/gallery/scb.mp4"
+            type="video/mp4"
+        >
+        Your browser does not support HTML video.
+    </video>
+</div>
+
 
         <!-- Gallery Start -->
         <div class="gallery">
+       <!-- Video 1 -->
+    <div class="gallery-item">
+        <figure>
+            <img
+                src="img/gallery/scb-thumbnail.jpg"
+                onclick="playFeaturedVideo('img/gallery/scb.mp4')"
+                alt="SCB 1250 IARCH Developers video"
+            />
+            <span class="play-icon">&#9654;</span>
+        </figure>
+    </div>
+
+    <!-- Video 2 -->
+    <div class="gallery-item">
+        <figure>
+            <img
+                src="img/gallery/chemmannr-2.png"
+                onclick="playFeaturedVideo('img/gallery/chemmannur.mp4')"
+                alt="Video 2"
+            />
+            <span class="play-icon">&#9654;</span>
+        </figure>
+    </div>
+
+    <!-- Video 3 -->
+    <div class="gallery-item">
+        <figure>
+            <img
+                src="img/gallery/kasargod-thumbnail.png"
+                onclick="playFeaturedVideo('img/gallery/boby.mp4')"
+                alt="Video 3"
+            />
+            <span class="play-icon">&#9654;</span>
+        </figure>
+    </div>
+
             <div class="gallery-item">
                 <figure>
                     <img
@@ -325,6 +379,26 @@
                 $('#modal-img').attr('src', src);
                 $('#img-modal').modal('show');
             }
+
+            
+
+
+function playFeaturedVideo(videoPath) {
+    const video = document.getElementById("mainVideo");
+
+    video.pause();
+    video.src = videoPath;
+    video.load();
+
+    video.play().catch((error) => {
+        console.error("Video playback error:", error , "Video path:", videoPath);
+    });
+
+    document.querySelector(".featured-video").scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+    });
+}
         </script>
     </body>
 </html>
